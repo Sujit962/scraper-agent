@@ -12,8 +12,8 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '18'
-      - name: Install
-        run: npm ci
+      - name: Install dependency
+        run: npm install
       - name: Run scraper
         run: npm run scrape
       - name: Commit results
